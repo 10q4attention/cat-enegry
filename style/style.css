@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
-
+html{box-sizing: border-box;}
 *, *::before, *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
@@ -11,20 +11,21 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    height: 100vh;
 }
 
 button {
     cursor: pointer;
 }
 
-.header > .container {
+.container {
     max-width: 1220px;
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
 }
 
 .header {
+    width: 100%;
     position: relative;
     min-height: 694px;
 }
@@ -32,7 +33,6 @@ button {
 .header-main {
     position: absolute;
     z-index: 3;
-    
 }
 
 .right-square {
@@ -89,6 +89,7 @@ button {
 
 ul.right-menu {
     list-style-type: none;
+    margin-right: 110px;
 }
 
 ul.right-menu li:first-child {
@@ -108,6 +109,10 @@ ul.right-menu li {
     font-size: 20px;
     line-height: 30px;
     color: #FFFFFF;
+}
+
+.button-under {
+    display: none;
 }
 
 .main-text {
@@ -186,6 +191,7 @@ ul.right-menu li {
     }
 
     .logo-menu > .menu {
+        padding-right: 20px;
         position: relative; 
     }
 
@@ -217,14 +223,14 @@ ul.right-menu li {
     .main-text {
         
         padding-top: 62px;
-        padding-left: 10px;
+        padding-left: 87px;
     }
 
     .main-text > h1 {
         margin-bottom: 41px;
     }
 
-    .main-text > p {
+    .main-text > p {    
         margin-bottom: 49px;
     }
 
@@ -238,11 +244,11 @@ ul.right-menu li {
 
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 390px) {
 
     .container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .can-tablet {
@@ -250,10 +256,13 @@ ul.right-menu li {
     }
 
     .can-mobile {
-        /* position: absolute; */
+        display: block;
+        margin: 0 auto;  
+        position: absolute;
         left: 20px;
-        top: 431px;
+        top: 233px;
         z-index: 5;
+
     }
 
     .logo-menu > ul.menu {
@@ -266,11 +275,13 @@ ul.right-menu li {
 
     .logo-mobile {
         align-items: center;
+        justify-content: space-between;
         position: relative;
         width: 100%;
         display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 11px;
-        margin-bottom: 44.39px;
     }
 
     .logo-mobile > img:first-child {
@@ -282,16 +293,18 @@ ul.right-menu li {
     }
 
     .main-text {
-        background-image: url(../img/index-background-desktop\ 1.png);
+        background-image: url(../img/index-background-desktop\ 2.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         z-index: 0;
-        position: absolute;
+        position: relative;
         height: 302px;
         width: 100%;
+        padding-left: 0;
+        padding-top: 27px;
+        margin-bottom: 138px;
         
-        /* padding-bottom: 33px; */
         }
 
     .main-text::after{ 
@@ -326,11 +339,33 @@ ul.right-menu li {
     }
 
     .main-text > button {
+        display: none;
+    }
+
+    .button-under {
+        display: block;
+        background: #68B738;
+        font-style: normal;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
         font-size: 14px;
         line-height: 18px;
-        display: block;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        border-width: 0;
+        padding: 7px 44px;
+        width: 100%;
+        position: relative;
+        z-index: 6;
         margin: 0 auto;
     }
 
-    
+    .mobile-button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
 }
