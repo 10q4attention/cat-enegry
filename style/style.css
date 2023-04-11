@@ -298,7 +298,7 @@ ul.right-menu li {
         background-position: center;
         background-size: cover;
         z-index: 0;
-        position: relative;
+        position: absolute;
         height: 302px;
         width: 100%;
         padding-left: 0;
@@ -345,24 +345,22 @@ ul.right-menu li {
     .button-under {
         display: block;
         background: #68B738;
+        color: #FFFFFF;
         font-style: normal;
         font-family: 'Oswald';
-        font-style: normal;
+        height: 50px;
+        width: 100%;
+        border: none;
+        padding: 7px 44px;
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
-        align-items: center;
-        text-align: center;
-        color: #FFFFFF;
-        border-width: 0;
-        padding: 7px 44px;
-        width: 100%;
         position: relative;
-        z-index: 6;
-        margin: 0 auto;
+        z-index: 5;
     }
 
     .mobile-button {
+        display: block;
         padding-left: 20px;
         padding-right: 20px;
     }
